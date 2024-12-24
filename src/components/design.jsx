@@ -35,7 +35,7 @@ function Desgin2() {
             const timer = setTimeout(() => {
                 setVisibleSteps((prev) => [...prev, steps[stepIndex]]);
                 setStepIndex((prevIndex) => prevIndex + 1);
-            }, 1000);
+            }, 500);
             return () => clearTimeout(timer);
         }
     }, [stepIndex]);
